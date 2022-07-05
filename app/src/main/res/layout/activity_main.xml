@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_one">
+
+    <EditText
+        android:id="@+id/txtproveedorid"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:ignore="MissingConstraints" />
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:gravity="center">
+
+
+     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txil"
+         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+         android:layout_width="265dp"
+         android:layout_height="wrap_content"
+
+         android:hint="Usuario"
+         app:startIconDrawable="@drawable/ic_user">
+
+         <com.google.android.material.textfield.TextInputEditText
+             android:id="@+id/txtloguser"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
+     </com.google.android.material.textfield.TextInputLayout>
+     <com.google.android.material.textfield.TextInputLayout
+         android:id="@+id/txtil2"
+         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+         android:layout_width="265dp"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/txil"
+         app:endIconMode="password_toggle"
+
+         android:hint="Clave"
+         app:startIconDrawable="@drawable/ic_pass">
+
+         <com.google.android.material.textfield.TextInputEditText
+             android:id="@+id/txtlogpas"
+             android:inputType="textPassword"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
+     </com.google.android.material.textfield.TextInputLayout>
+
+     <Button
+         android:id="@+id/button"
+         android:layout_width="175dp"
+         android:layout_height="67dp"
+         android:layout_below="@+id/txtil2"
+         android:backgroundTint="@color/purple_700"
+         android:text="Iniciar sesion" />
+
+     <TextView
+         android:id="@+id/reg"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/button"
+         android:gravity="center"
+         android:paddingLeft="10dp"
+         android:text="Recuperar cuenta"
+         android:textColor="@color/purple_500" />
+
+
+ </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragmentBar.DashboardFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:flow_horizontalAlign="center"
+>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/datoenviado"/>
+<androidx.cardview.widget.CardView
+    android:id="@+id/ll24"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    app:cardElevation="10dp"
+    android:layout_marginHorizontal="10dp"
+    android:backgroundTint="@color/purple_700"
+    app:cardCornerRadius="10dp">
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:padding="10dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txtcli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="36dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="clientes"
+                android:textColor="#D3FFFFFF"
+                tools:layout_editor_absoluteX="63dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtcsop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:gravity="center"
+                android:text="∞ "
+                android:textColor="@color/white"
+                android:textSize="36dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="206dp"
+
+                tools:layout_editor_absoluteY="61dp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="clientes soportados"
+                android:textColor="@color/white"
+                tools:layout_editor_absoluteX="216dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+        </LinearLayout>
+
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/purple_500"
+            android:baselineAlignBottom="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_preferences"
+            app:backgroundTint="#00FFFFFF"
+            app:tint="@color/white">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/dash2"
+            android:layout_below="@+id/ll24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:cardElevation="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/purple_700"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:padding="10dp"
+
+                >
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll24"
+                    android:layout_centerHorizontal="true"
+
+                    android:text="promedio de clientes en un mes"
+                    android:textColor="@color/white"
+                    tools:layout_editor_absoluteX="176dp"
+                    tools:layout_editor_absoluteY="149dp" />
+
+                <TextView
+                    android:id="@+id/txtprom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView10"
+                    android:layout_marginLeft="50dp"
+                    android:ems="2"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="36dp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="74dp"
+                    tools:layout_editor_absoluteY="181dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:id="@+id/line"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/dash2"
+            android:layout_marginHorizontal="15dp"
+            android:background="#23000000"/>
+
+
+        <TextView
+            android:id="@+id/txtliq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:ems="6"
+            android:text="0"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="36dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="172dp"
+            tools:layout_editor_absoluteY="236dp" />
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtliq"
+            android:text="Liquidacion del proximo mes"
+            android:layout_centerHorizontal="true"
+            tools:layout_editor_absoluteX="185dp"
+            tools:layout_editor_absoluteY="292dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:id="@+id/linedos"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/textView11"
+            android:layout_marginHorizontal="15dp"
+            android:background="#23000000"/>
+
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_below="@+id/linedos"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_below="@+id/linedos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maquinas totales" />
+
+                <TextView
+                    android:id="@+id/txtmaqt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView7"
+                    android:text="0"
+                    android:gravity="center"
+                    android:ems="2"
+                    android:textColor="@color/black"
+                    android:textSize="36dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linedos"
+
+                    android:text="Maquinas desocupadas" />
+
+                <TextView
+                    android:id="@+id/txtmaqd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView8"
+                    android:text="0"
+                    android:gravity="center"
+                    android:ems="2"
+                    android:textColor="@color/black"
+                    android:textSize="36dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
