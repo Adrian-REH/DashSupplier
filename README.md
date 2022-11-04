@@ -1,4 +1,4 @@
-# DashClient
+# DashSupplier
 [![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white&labelColor=7F52FF)]()
 [![Android_Studio](https://img.shields.io/badge/Android_Studio-3DDC84?style=flat-square&logo=android-studio&logoColor=black&labelColor=3DDC84)]()
 [![php](https://img.shields.io/badge/php-F7DF1E?style=flat-square&logo=php&logoColor=black&labelColor=F7DF1E)]()
